@@ -44,8 +44,8 @@ namespace UserLogin
             {
                 Console.WriteLine("\nUsername:" + user1.username);
                 Console.WriteLine("Password:" + user1.password);
-                Console.WriteLine("Faculty number:" + user1.facNum);
-                Console.WriteLine("User role:" + user1.userRole);
+                Console.WriteLine("Faculty number:" + user1.facultyNumber);
+                Console.WriteLine("User role:" + user1.role);
                 Console.WriteLine("Date Created:" + user1.created);
                 Console.WriteLine("Date Valid Until:" + user1.validUntil);
                 

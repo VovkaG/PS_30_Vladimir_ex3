@@ -45,7 +45,7 @@ namespace UserLogin
         public static void AssignUserRole(string username, UserRoles newRole) {
             foreach (var user in TestUser) {
                 if (username.Equals(user.username)) {
-                    user.userRole = newRole;
+                    user.role = newRole;
                     Logger.LogActivity("Changed role of " + username);
                 }
             }
@@ -57,28 +57,28 @@ namespace UserLogin
                 _testUser.Add(new User());
                 _testUser[0].username = "Vladimir";
                 _testUser[0].password = "12345";
-                _testUser[0].facNum = "121219005";
+                _testUser[0].facultyNumber = "121219005";
                 _testUser[0].created = DateTime.Now;
                 _testUser[0].validUntil = DateTime.MaxValue;
-                _testUser[0].userRole = UserRoles.ADMIN;
+                _testUser[0].role = UserRoles.ADMIN;
 
                 _testUser.Add(new User());
                 _testUser[1] = new User();
                 _testUser[1].username = "Kircho";
                 _testUser[1].password = "Kircho";
-                _testUser[1].facNum = "121219006";
+                _testUser[1].facultyNumber = "121219006";
                 _testUser[1].created = DateTime.Now;
                 _testUser[1].validUntil = DateTime.MaxValue;
-                _testUser[1].userRole = UserRoles.STUDENT;
+                _testUser[1].role = UserRoles.STUDENT;
 
                 _testUser.Add(new User());
                 _testUser[2] = new User();
                 _testUser[2].username = "Boiko";
                 _testUser[2].password = "Boiko";
-                _testUser[2].facNum = "121219007";
+                _testUser[2].facultyNumber = "121219007";
                 _testUser[2].created = DateTime.Now;
                 _testUser[2].validUntil = DateTime.MaxValue;
-                _testUser[2].userRole = UserRoles.STUDENT;
+                _testUser[2].role = UserRoles.STUDENT;
             }
         }
 

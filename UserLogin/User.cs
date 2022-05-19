@@ -10,21 +10,21 @@ namespace UserLogin
     {
         public string username { get; set; }
         public string password { get; set; }
-        public string facNum { get; set; }
+        public string facultyNumber { get; set; }
 
         public DateTime created { get; set; }
         public DateTime validUntil { get; set; }
 
-        public UserRoles userRole { get; set; }
+        public UserRoles role { get; set; }
 
         public User(string username, string password, string facNum, DateTime created, DateTime validUntil, UserRoles userRole) { 
 
             this.username = username;
             this.password = password;
-            this.facNum = facNum;
+            this.facultyNumber = facNum;
             this.created = created;
             this.validUntil = validUntil;
-            this.userRole = userRole;            
+            this.role = userRole;            
         
         }
 
